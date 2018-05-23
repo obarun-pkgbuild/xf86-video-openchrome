@@ -8,15 +8,15 @@ pkgname=xf86-video-openchrome
 #_commit=8c819ed # 7 digits # = 0.6.0 RC1
 #pkgver=0.5.0+279+g8c819ed
 pkgver=0.6.0
-pkgrel=3
+pkgrel=4
 pkgdesc="X.Org Openchrome drivers"
 arch=(x86_64)
 license=('custom')
 url="http://www.freedesktop.org/wiki/Openchrome/"
 depends=('libdrm' 'libxvmc')
 optdepends=('unichrome-dri')
-makedepends=('xorg-server-devel' 'X-ABI-VIDEODRV_VERSION=23') # 'git')
-conflicts=('xorg-server<1.19' 'X-ABI-VIDEODRV_VERSION<23' 'X-ABI-VIDEODRV_VERSION>=24'
+makedepends=('xorg-server-devel' 'X-ABI-VIDEODRV_VERSION=24.0') # 'git')
+conflicts=('xorg-server<1.20' 'X-ABI-VIDEODRV_VERSION<24.0' 'X-ABI-VIDEODRV_VERSION>=25'
            'xf86-video-via' 'xf86-video-unichrome' 'openchrome')
 replaces=('openchrome' 'xf86-video-via')
 groups=('xorg-drivers')
